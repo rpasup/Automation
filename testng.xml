@@ -1,0 +1,9 @@
+
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="RajProject">
+        <classes>
+            <class name="FirstTestCase"/>
+            <class name="SecondTest"/>
+        </classes>
+    </test>
+</suite>
