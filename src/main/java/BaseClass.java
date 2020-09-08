@@ -1,21 +1,27 @@
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BaseClass {
-    public String projectUrl ="";
+    public String projectUrl ="https://www.google.com/";
     public static WebDriver driver;
 
     @BeforeClass
     public void setup(){
-       System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Driver//chromedriver.exe");
-       driver = new ChromeDriver();
+       try {
+        System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//Driver//geckodriver");
+        driver = new FirefoxDriver();
+       } catch (Exception e) {
+           //TODO: handle exception
+           System.out.println(e.getLocalizedMessage());
+       }
+
     }
 
     @AfterClass
     public void teardown(){
-        driver.quit();
+        driver.close();
     }
 
 }

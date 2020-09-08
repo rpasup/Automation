@@ -15,7 +15,10 @@
         <org.seleniumhq.selenium.selenium-server.version>3.141.59
         </org.seleniumhq.selenium.selenium-server.version>
         <org.testng.testng.version>6.8.7</org.testng.testng.version>
+        <maven.compiler.source>1.6</maven.compiler.source>
+         <maven.compiler.target>1.6</maven.compiler.target>
     </properties>
+    
 
     <dependencies>
     <dependency>
