@@ -4,7 +4,7 @@ public class SecondTest {
 
     @Test
     public void setup(){
-        System.out.println("dzhjfgdshjgf");
+        System.out.println("simple print statements");
     }
     @Test
     public void login(){
