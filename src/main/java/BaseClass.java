@@ -11,8 +11,8 @@ public class BaseClass {
     public void setup(){
        try {
         System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//Driver//geckodriver");
-        options = Options()
-        options.headless = True
+        options = Options();
+        options.headless = True;
         // driver = webdriver.Firefox(options=options, executable_path=r'C:\Utility\BrowserDrivers\geckodriver.exe')
        } catch (Exception e) {
            //TODO: handle exception
