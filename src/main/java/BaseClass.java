@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 
 
 public class BaseClass {
-    public String projectUrl ="http://34.69.107.249/";
+    public String projectUrl ="http://35.238.96.65/";
     public static WebDriver driver;
 
     @BeforeClass
